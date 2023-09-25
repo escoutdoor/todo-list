@@ -9,7 +9,8 @@ export const useTodoList = () => {
 
 	const sortBy = searchParams.get('sortBy') || 'by name'
 	// @ts-ignore
-	const sorted = [...todoList].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+	const sortedByDate = [...todoList].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+	const sortedByName = [...todoList].sort((a, b) => a.title.localeCompare(b.title))
 
-	return { todoList: sortBy === 'by date' ? sorted : todoList }
+	return { todoList: sortBy === 'by date' ? sortedByDate : sortedByName }
 }
