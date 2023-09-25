@@ -1,0 +1,20 @@
+.button {
+	background: var(--pink);
+	color: #fff;
+	font-weight: 700;
+	height: 50px;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	transition: filter 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	cursor: pointer;
+
+	&:hover {
+		filter: brightness(85%);
+	}
+
+	&.disabled {
+		cursor: not-allowed;
+		filter: brightness(50%);
+	}
+}

@@ -1,0 +1,24 @@
+.home {
+	padding: 30px 0px;
+	background: #444444;
+	min-height: 100vh;
+
+	.wrapper {
+		margin: 0 auto;
+		max-width: 1140px;
+		padding: 0px 10px;
+	}
+
+	.content {
+		.title {
+			text-align: center;
+		}
+
+		.list__block {
+			background: #3b424b;
+			width: 100%;
+			min-height: 500px;
+			padding: 30px;
+		}
+	}
+}
